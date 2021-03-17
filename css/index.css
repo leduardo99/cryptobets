@@ -1,0 +1,7 @@
+#header-fix {
+  left: 0 !important;
+}
+
+main {
+  margin-left: unset !important;
+}
