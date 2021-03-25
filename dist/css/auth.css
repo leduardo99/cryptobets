@@ -1,0 +1,30 @@
+body {
+  background: #10163a !important;
+}
+
+.lock-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url('../images/bg.jpg') !important;
+  background-position: center;
+  background-repeat: repeat repeat;
+}
+
+.lock-image img {
+  max-width: 50%;
+}
+
+.lockscreen {
+  background: #fff !important;
+}
+
+.form-control {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.custom-control.custom-checkbox .custom-control-label::before {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+

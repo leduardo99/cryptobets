@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- START: Head-->
   <head>
     <meta charset="UTF-8" />
     <title>CryptoBets - Dashboard</title>
     <link rel="shortcut icon" href="dist/images/favicon.ico" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <!-- START: Template CSS-->
     <link
       rel="stylesheet"
       href="dist/vendors/bootstrap/css/bootstrap.min.css"
@@ -26,9 +24,7 @@
       href="dist/vendors/flags-icon/css/flag-icon.min.css"
     />
     <link rel="stylesheet" href="dist/vendors/flag-select/css/flags.css" />
-    <!-- END Template CSS-->
 
-    <!-- START: Page CSS-->
     <link rel="stylesheet" href="dist/vendors/morris/morris.css" />
     <link
       rel="stylesheet"
@@ -40,27 +36,26 @@
       href="dist/vendors/bootstrap-tour/css/bootstrap-tour-standalone.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="dist/vendors/fontawesome/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="dist/vendors/ionicons/css/ionicons.min.css" />
     <link rel="stylesheet" href="dist/vendors/cryptofont/cryptofont.css" />
-    <!-- END: Page CSS-->
 
-    <!-- START: Custom CSS-->
     <link rel="stylesheet" href="dist/css/main.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <!-- END: Custom CSS-->
+    <link rel="stylesheet" href="dist/css/index.css" />
   </head>
-  <!-- END Head-->
 
-  <!-- START: Body-->
   <body id="main-container" class="dark">
-    <!-- START: Header-->
     <div id="header-fix" class="header fixed-top">
       <nav class="navbar p-0">
         <div class="navbar-header h4 mb-0 align-self-center d-flex">
           <a href="index.html" class="horizontal-logo align-self-center d-flex">
             <img
-              src="assets/logo_cryptobets.svg"
+              src="dist/images/logo_cryptobets.svg"
               alt="logo"
               width="60"
               class="img-fluid"
@@ -89,11 +84,11 @@
                     class="media-body align-self-center d-none d-sm-block mr-2"
                   >
                     <p class="mb-0 text-uppercase line-height-1">
-                      <b>John Deo</b>
+                      <b>CryptoBets</b>
                     </p>
                   </div>
                   <img
-                    src="assets/logo_cryptobets.svg"
+                    src="dist/images/logo_cryptobets.svg"
                     alt="user-image"
                     class="d-flex img-fluid rounded-circle"
                     width="45"
@@ -103,42 +98,101 @@
 
               <div class="dropdown-menu dropdown-menu-right p-0">
                 <a href="" class="dropdown-item px-2 align-self-center d-flex">
-                  <span class="icon-pencil mr-2 h6 mb-0"></span> Edit Profile</a
-                >
-                <a href="" class="dropdown-item px-2 align-self-center d-flex">
-                  <span class="icon-user mr-2 h6 mb-0"></span> View Profile</a
-                >
-                <div class="dropdown-divider"></div>
-                <a href="" class="dropdown-item px-2 align-self-center d-flex">
-                  <span class="icon-support mr-2 h6 mb-0"></span> Help Center</a
-                >
-                <a href="" class="dropdown-item px-2 align-self-center d-flex">
-                  <span class="icon-globe mr-2 h6 mb-0"></span> Forum</a
-                >
-                <a href="" class="dropdown-item px-2 align-self-center d-flex">
-                  <span class="icon-settings mr-2 h6 mb-0"></span> Account
-                  Settings</a
-                >
+                  <span class="icon-settings mr-2 h6 mb-0"></span>
+                  Account Settings
+                </a>
                 <div class="dropdown-divider"></div>
                 <a
                   href=""
                   class="dropdown-item px-2 text-danger align-self-center d-flex"
                 >
-                  <span class="icon-logout mr-2 h6 mb-0"></span> Sign Out</a
-                >
+                  <span class="icon-logout mr-2 h6 mb-0"></span>
+                  Sign Out
+                </a>
               </div>
             </li>
           </ul>
         </div>
       </nav>
     </div>
-    <!-- END: Header-->
 
-    <!-- START: Main Content-->
     <main>
       <div class="container-fluid">
         <!-- START: Card Data-->
+        <div class="row d-xl-flex">
+          <div class="col-12 col-sm-6 col-xl mt-3">
+            <div class="card">
+              <div class="card-body custom d-flex align-items-center">
+                <div class="d-none d-lg-block card-image">
+                  <img src="dist/images/balance.png" alt="deposit">
+                </div>
+                <div class="p-2">
+                  <span class="card-title h3 font-weight-bold mt-3"
+                    >Balance</span
+                  ><br />
+                  <span class="font-weight-bold h4"> $26,476 </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-xl mt-3">
+            <div class="card">
+              <div class="card-body custom d-flex align-items-center">
+                <div class="d-none d-lg-block card-image">
+                  <img src="dist/images/deposit.png" alt="deposit">
+                </div>
+                <div class="p-2">
+                  <span class="card-title h3 font-weight-bold mt-3"
+                    >Deposit more Balance</span
+                  ><br />
+                  <div class="d-flex align-items-end">
+                    <div id="qrcode"></div>
+                    <button type="button" class="btn btn-primary" id="button-qrcode">
+                      <i class="far fa-copy"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-xl mt-3">
+            <div class="card">
+              <div class="card-body custom d-flex align-items-center">
+                 <div class="d-none d-lg-block card-image">
+                  <img src="dist/images/reffereal.png" alt="deposit">
+                </div>
+                <div class="p-2">
+                  <span class="card-title h3 font-weight-bold mt-3"
+                    >Refferal</span
+                  ><br />
+                  <span class="font-weight-bold h4">22</span>
+                  <br />
+                  <span class="font-weight-bold">Total: $80</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-xl mt-3">
+            <div class="card">
+              <div class="card-body custom d-flex align-items-center">
+                 <div class="d-none d-lg-block card-image">
+                  <img src="dist/images/profit.png" alt="deposit">
+                </div>
+                <div class="p-2">
+                  <span class="card-title h3 font-weight-bold mt-3">Profit</span
+                  ><br />
+                  <span class="font-weight-bold h4">$500</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="row">
+          <!-- START: Statistics-->
           <div class="col-12 mt-3">
             <div class="card">
               <div
@@ -155,8 +209,9 @@
                       role="tab"
                       aria-controls="pills-week"
                       aria-selected="true"
-                      >Week</a
                     >
+                      WEEK
+                    </a>
                   </li>
                   <li class="nav-item">
                     <a
@@ -167,8 +222,9 @@
                       role="tab"
                       aria-controls="pills-month"
                       aria-selected="false"
-                      >Month</a
                     >
+                      MONTH
+                    </a>
                   </li>
                   <li class="nav-item">
                     <a
@@ -179,8 +235,9 @@
                       role="tab"
                       aria-controls="pills-year"
                       aria-selected="false"
-                      >Year</a
                     >
+                      YEAR
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -202,7 +259,7 @@
                             >
                               <span class="text-muted">Last Profit</span>
                               <h3 class="d-flex align-items-center">
-                                $2.000
+                                $7,561.90
                               </h3>
                             </div>
                             <div
@@ -222,65 +279,200 @@
                               </h3>
                             </div>
                           </div>
+                          <div id="bitcoin_statistics"></div>
+                        </div>
+                        <div
+                          class="tab-pane fade"
+                          id="pills-month"
+                          role="tabpanel"
+                          aria-labelledby="pills-month-tab"
+                        >
+                          <div class="row">
+                            <div
+                              class="col-12 col-md-4 border border border-top-0 border-left-0 p-3"
+                            >
+                              <span class="text-muted">Last Profit</span>
+                              <h3 class="d-flex align-items-center">$127.92</h3>
+                            </div>
+                            <div
+                              class="col-12 col-md-4 border border-top-0 border-left-0 p-3"
+                            >
+                              <span class="text-muted">Week Profit</span>
+                              <h3 class="d-flex align-items-center">$126.67</h3>
+                            </div>
+                            <div
+                              class="col-12 col-md-4 border border-top-0 border-left-0 border-right-0 p-3"
+                            >
+                              <span class="text-muted">Month Profit</span>
+                              <h3 class="d-flex align-items-center">$125.22</h3>
+                            </div>
+                          </div>
+                          <div id="ethereum_statistics"></div>
+                        </div>
+                        <div
+                          class="tab-pane fade"
+                          id="pills-year"
+                          role="tabpanel"
+                          aria-labelledby="pills-year-tab"
+                        >
+                          <div class="row">
+                            <div
+                              class="col-12 col-md-4 border border border-top-0 border-left-0 p-3"
+                            >
+                              <span class="text-muted">Last Profit</span>
+                              <h3 class="d-flex align-items-center">$42.18</h3>
+                            </div>
+                            <div
+                              class="col-12 col-md-4 border border-top-0 border-left-0 p-3"
+                            >
+                              <span class="text-muted">Week Profit</span>
+                              <h3 class="d-flex align-items-center">$40.86</h3>
+                            </div>
+                            <div
+                              class="col-12 col-md-4 border border-top-0 border-left-0 border-right-0 p-3"
+                            >
+                              <span class="text-muted">Month Profit</span>
+                              <h3 class="d-flex align-items-center">$41.72</h3>
+                            </div>
+                          </div>
+                          <div id="litecoin_statistics"></div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-12">
-                      <canvas id="statistics"></canvas>
-                      <!-- <div id="statistics"></div> -->
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- END: Statistics-->
+
+          <!-- START: Statistics-->
+          <div class="col-12 mt-5">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title">Operations</h4>
+              </div>
+
+              <div class="card-content">
+                <div class="card-body pt-0">
+                  <div class="table-responsive">
+                    <table class="table table-borderless">
+                      <thead>
+                        <tr>
+                          <th>Moeda</th>
+                          <th>Data de Entrada</th>
+                          <th>Data de Saída</th>
+                          <th>Valor de Entrada</th>
+                          <th>Valor de Saída</th>
+                          <th>Profit</th>
+                          <th>Gráfico</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div>
+                              <img src="dist/images/btc.png" alt="btc" />
+                              <span>Bitcoin</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="content">
+                              <span>22/03/2021</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="content">
+                              <span>22/03/2021</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="content">
+                              <span>$30,343</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="content">
+                              <span>$30,343</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="content">
+                              <span class="green">0.89 BTC</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="content">
+                              <span>Gráfico</span>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div>
+                              <img src="dist/images/btc.png" alt="btc" />
+                              <span>Bitcoin</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="content">
+                              <span>22/03/2021</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="content">
+                              <span>22/03/2021</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="content">
+                              <span>$30,343</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="content">
+                              <span>$30,343</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="content">
+                              <span class="red">0.00 BTC</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="content">
+                              <span>Gráfico</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END: Statistics-->
         </div>
         <!-- END: Card DATA-->
       </div>
     </main>
-    <!-- END: Content-->
 
-    <!-- START: Template JS-->
     <script src="dist/vendors/jquery/jquery-3.3.1.min.js"></script>
+    <script src="dist/vendors/qrcode-js/qrcode.min.js"></script>
     <script src="dist/vendors/jquery-ui/jquery-ui.min.js"></script>
     <script src="dist/vendors/moment/moment.js"></script>
     <script src="dist/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="dist/vendors/slimscroll/jquery.slimscroll.min.js"></script>
     <script src="dist/vendors/flag-select/js/jquery.flagstrap.min.js"></script>
-    <!-- END: Template JS-->
 
-    <!-- START: APP JS-->
-    <script src="dist/js/app.js"></script>
-    <!-- END: APP JS-->
-
-    <!-- START: Page Vendor JS-->
-    <script src="dist/vendors/raphael/raphael.min.js"></script>
-    <script src="dist/vendors/morris/morris.min.js"></script>
-    <script src="dist/vendors/chartjs/Chart.min.js"></script>
-    <script src="dist/vendors/starrr/starrr.js"></script>
-    <script src="dist/vendors/jquery-flot/jquery.canvaswrapper.js"></script>
-    <script src="dist/vendors/jquery-flot/jquery.colorhelpers.js"></script>
-    <script src="dist/vendors/jquery-flot/jquery.flot.js"></script>
-    <script src="dist/vendors/jquery-flot/jquery.flot.saturated.js"></script>
-    <script src="dist/vendors/jquery-flot/jquery.flot.browser.js"></script>
-    <script src="dist/vendors/jquery-flot/jquery.flot.drawSeries.js"></script>
-    <script src="dist/vendors/jquery-flot/jquery.flot.uiConstants.js"></script>
-    <script src="dist/vendors/jquery-flot/jquery.flot.legend.js"></script>
-    <script src="dist/vendors/jquery-flot/jquery.flot.pie.js"></script>
-    <script src="dist/vendors/bootstrap-tour/js/bootstrap-tour-standalone.min.js"></script>
-    <script src="dist/vendors/apexcharts/apexcharts.min.js"></script>
-    <script src="dist/vendors/amcharts/core.js"></script>
-    <script src="dist/vendors/amcharts/charts.js"></script>
-    <script src="dist/vendors/amcharts/animated.js"></script>
-    <script src="dist/vendors/amcharts/amchartsdark.js"></script>
-    <!-- END: Page Vendor JS-->
-
-    <!-- START: Page JS-->
-    <script src="dist/js/cryptocurrency.script.js"></script>
-    <!-- END: Page JS-->
+    <script type="text/javascript">
+      new QRCode(document.getElementById("qrcode"), {
+        text: "http://localhost/index.html",
+        width: 128,
+        height: 128,
+      });
+    </script>
   </body>
-  <!-- END: Body-->
 </html>
