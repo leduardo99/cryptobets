@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CryptoBets - Deposit</title>
+    <link rel="shortcut icon" href="dist/images/favicon.ico" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="dist/vendors/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="dist/vendors/jquery-ui/jquery-ui.min.css" />
+    <link
+      rel="stylesheet"
+      href="dist/vendors/jquery-ui/jquery-ui.theme.min.css"
+    />
+    <link rel="stylesheet" href="dist/vendors/chartjs/Chart.min.css" />
+    <link rel="stylesheet" href="dist/vendors/starrr/starrr.css" />
+    <link
+      href="dist/vendors/bootstrap-tour/css/bootstrap-tour-standalone.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <link rel="stylesheet" href="dist/css/deposit.css" />
+  </head>
+
+  <body id="main-container" class="dark">
+    <div id="header-fix" class="header fixed-top">
+      <nav class="navbar p-0">
+        <div class="navbar-header h4 mb-0 align-self-center d-flex">
+          <a href="index.html" class="horizontal-logo align-self-center d-flex">
+            <img
+              src="dist/images/logo_cryptobets.svg"
+              alt="logo"
+              width="60"
+              class="img-fluid"
+            />
+            <span class="h5 align-self-center mb-0">CryptoBets</span>
+          </a>
+        </div>
+        <div class="navbar-right ml-auto">
+          <ul class="ml-auto p-0 m-0 list-unstyled d-flex">
+            <li class="mr-1 d-inline-block my-auto">
+              <div
+                id="options"
+                data-input-name="country2"
+                data-selected-country="US"
+              ></div>
+            </li>
+            <li class="dropdown user-profile d-inline-block py-1 mr-2">
+              <a
+                href="#"
+                class="nav-link px-2 py-0"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="media">
+                  <div
+                    class="media-body align-self-center d-none d-sm-block mr-2"
+                  >
+                    <p class="mb-0 text-uppercase line-height-1">
+                      <b>CryptoBets</b>
+                    </p>
+                  </div>
+                  <img
+                    src="dist/images/logo_cryptobets.svg"
+                    alt="user-image"
+                    class="d-flex img-fluid rounded-circle"
+                    width="45"
+                  />
+                </div>
+              </a>
+
+              <div class="dropdown-menu dropdown-menu-right p-0">
+                <a href="" class="dropdown-item px-2 align-self-center d-flex">
+                  <span class="icon-settings mr-2 h6 mb-0"></span>
+                  Account Settings
+                </a>
+                <div class="dropdown-divider"></div>
+                <a
+                  href=""
+                  class="dropdown-item px-2 text-danger align-self-center d-flex"
+                >
+                  <span class="icon-logout mr-2 h6 mb-0"></span>
+                  Sign Out
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <!-- START: Statistics-->
+          <div class="col-12 mt-5">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title">Deposit</h4>
+              </div>
+
+              <div class="card-content">
+                <div class="card-body d-flex">
+                  <div id="qrcode" class="mr-3"></div>
+                  <div
+                    id="details"
+                    class="d-flex flex-column align-items-start justify-content-center"
+                  >
+                    <span class="font-weight-bold text-white">Message</span>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer ipsum dolor sit
+                      amet, consectetuer ipsum dolor sit amet, consectetuer
+                      ipsum dolor sit amet, consectetuer ipsum dolor sit amet,
+                      consectetuer ipsum dolor sit
+                    </p>
+
+                    <div>
+                      <label for="wallet">Wallet for Payment</label>
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-describedby="wallet"
+                          id="waller"
+                          value="wwerweh23or32hr328ohr3oh320832h"
+                          disabled
+                        />
+                        <div class="input-group-append">
+                          <button class="btn btn-primary" type="button">
+                            <i class="fas fa-copy"></i>
+                            Copy Wallet
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer pt-3">
+                  <h3>Deposit History</h3>
+                  <div class="table-responsive">
+                    <table class="table table-borderless">
+                      <thead>
+                        <tr>
+                          <th>Date</th>
+                          <th>Coin</th>
+                          <th>Amount</th>
+                          <th>Status</th>
+                          <th>Adress</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="content">
+                              <span>22/03/2021</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div>
+                              <img src="dist/images/btc.png" alt="btc" />
+                              <span>Bitcoin</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="content">
+                              <span>0.0002</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="content">
+                              <span>Completed</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="content">
+                              <span
+                                >wWasjdhw7657wd57ew65we86d2dg82f32f32f23daaf82</span
+                              >
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="content">
+                              <span>22/03/2021</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div>
+                              <img src="dist/images/btc.png" alt="btc" />
+                              <span>Bitcoin</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="content">
+                              <span>0.0002</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="content">
+                              <span>Completed</span>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="content">
+                              <span
+                                >wWasjdhw7657wd57ew65we86d2dg82f32f32f23daaf82</span
+                              >
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END: Statistics-->
+        </div>
+      </div>
+    </main>
+    <script src="dist/vendors/jquery/jquery-3.3.1.min.js"></script>
+    <script src="dist/vendors/qrcode-js/qrcode.min.js"></script>
+    <script src="dist/vendors/jquery-ui/jquery-ui.min.js"></script>
+    <script src="dist/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/js/index.js"></script>
+
+    <script type="text/javascript">
+      new QRCode(document.getElementById("qrcode"), {
+        text: "http://localhost/index.html",
+        width: 128,
+        height: 128,
+      });
+    </script>
+  </body>
+</html>

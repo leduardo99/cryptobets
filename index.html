@@ -365,7 +365,6 @@
                           <th>Valor de Entrada</th>
                           <th>Valor de Saída</th>
                           <th>Profit</th>
-                          <th>Gráfico</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -403,7 +402,7 @@
                           </td>
                           <td>
                             <div class="content">
-                              <span>Gráfico</span>
+                              <div id="btc" class="graphic"></div>
                             </div>
                           </td>
                         </tr>
@@ -442,7 +441,7 @@
                           </td>
                           <td>
                             <div class="content">
-                              <span>Gráfico</span>
+                              <div id="btc-2" class="graphic"></div>
                             </div>
                           </td>
                         </tr>
@@ -458,7 +457,7 @@
         <!-- END: Card DATA-->
       </div>
     </main>
-
+    <script src="dist/vendors/apexcharts/apexcharts.min.js"></script>
     <script src="dist/vendors/jquery/jquery-3.3.1.min.js"></script>
     <script src="dist/vendors/qrcode-js/qrcode.min.js"></script>
     <script src="dist/vendors/jquery-ui/jquery-ui.min.js"></script>
@@ -466,6 +465,7 @@
     <script src="dist/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="dist/vendors/slimscroll/jquery.slimscroll.min.js"></script>
     <script src="dist/vendors/flag-select/js/jquery.flagstrap.min.js"></script>
+    <script src="dist/js/index.js"></script>
 
     <script type="text/javascript">
       new QRCode(document.getElementById("qrcode"), {
