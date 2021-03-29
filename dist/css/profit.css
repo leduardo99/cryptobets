@@ -41,12 +41,6 @@ td:nth-child(2) > div {
   align-items: center;
 }
 
-td:nth-child(2) > div img {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-}
-
 td:last-child {
   border-right-style: solid;
   border-bottom-right-radius: 10px;
@@ -69,14 +63,54 @@ td:first-child > div {
 
 td:first-child > div span {
   margin-left: 15px;
-  text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: bold;
 }
 
-td img {
-  width: 40px;
-  height: 40px;
+td:first-child > div span.red {
+  color:#d43333;
+}
+
+td:first-child > div span.green {
+  color:#42b649;
+}
+
+tbody td:not(.withdraw):last-child:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f062";
+  font-size: 25px;
+  color: #42b649;
+
+  position: absolute;
+  top: 0;
+  right: 30px;
+
+  height: 100%;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+tbody td.withdraw:last-child:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f063";
+  font-size: 25px;
+  color: #d43333;
+
+  position: absolute;
+  top: 0;
+  right: 30px;
+
+  height: 100%;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 tbody td:first-child:before {
@@ -91,17 +125,6 @@ tbody td:first-child:before {
   background: #34b44e;
 }
 
-#qrcode {
-  max-height: 30%;
-}
-
-#button-qrcode {
-  width: 40px;
-  height: 40px;
-
-  margin-left: 20px;
-}
-
 #details {
   max-width: 400px;
 }
@@ -110,3 +133,34 @@ tbody td:first-child:before {
   padding: 0 !important;
   border-bottom: 1px solid var(--bordercolor);
 }
+
+#amount {
+  border-bottom: 1px solid var(--bordercolor);
+  border-right: 1px solid var(--bordercolor) !important;
+}
+
+.border-right {
+  border-right: 1px solid var(--bordercolor) !important;
+}
+
+#btc-input {
+  border: 1px solid #ced4da !important;
+  background-color: #e9ecef !important;
+  color: black;
+
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#withdraw {
+  height: 44px;
+  font-weight: bold;
+}
+
+
+#withdraw img {
+  height: 20px;
+  width: 20px;
+}
+

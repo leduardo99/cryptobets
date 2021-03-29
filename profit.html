@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>CryptoBets - Deposit</title>
+    <title>CryptoBets - Profit</title>
     <link rel="shortcut icon" href="dist/images/favicon.ico" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
 
@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="dist/vendors/flag-select/css/flags.css" />
 
     <link rel="stylesheet" href="dist/css/main.css" />
-    <link rel="stylesheet" href="dist/css/deposit.css" />
+    <link rel="stylesheet" href="dist/css/profit.css" />
   </head>
 
   <body id="main-container" class="dark">
@@ -101,16 +101,68 @@
           <div class="col-12 mt-5">
             <div class="card">
               <div class="card-header">
-                <h4 class="card-title">Deposit</h4>
+                <h4 class="card-title">Profit</h4>
               </div>
 
               <div class="card-content">
-                <div class="card-body">
-                  <div class="d-flex p-3">
-                    <div id="qrcode" class="mr-3"></div>
+                <div class="card-body d-flex justify-content-between">
+                  <div class="w-100 d-flex flex-column">
+                    <div id="amount">
+                      <div class="p-3">
+                        <h3 class="text-white mb-3">
+                          Amount available for withdraw
+                        </h3>
+
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="dist/images/btc.png"
+                            alt="btc"
+                            width="50"
+                            height="50"
+                          />
+                          <h2 class="ml-3 text-white text-weight-bold m-0">
+                            0.02000 BTC
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-3 border-right">
+                      <div class="container d-flex align-items-center">
+                        <div class="input-group">
+                          <input
+                            type="text"
+                            class="form-control"
+                            aria-describedby="wallet"
+                            id="btc-input"
+                            value="0.02000"
+                            disabled
+                          />
+                          <div class="input-group-append">
+                            <button class="btn btn-warning" type="button">
+                              BTC
+                            </button>
+                          </div>
+                        </div>
+
+                        <button
+                          class="btn btn-primary w-100 ml-3"
+                          type="button"
+                          id="withdraw"
+                        >
+                          <img
+                            src="dist/images/withdraw.svg"
+                            alt="withdraw"
+                            class="mr-2"
+                          />
+                          Withdraw Fund
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-start w-100">
                     <div
                       id="details"
-                      class="d-flex flex-column align-items-start justify-content-center"
+                      class="d-flex flex-column align-items-start justify-content-center p-3"
                     >
                       <span class="font-weight-bold text-white">Message</span>
                       <p>
@@ -119,53 +171,31 @@
                         ipsum dolor sit amet, consectetuer ipsum dolor sit amet,
                         consectetuer ipsum dolor sit
                       </p>
-
-                      <div>
-                        <label for="wallet">Wallet for Payment</label>
-                        <div class="input-group">
-                          <input
-                            type="text"
-                            class="form-control"
-                            aria-describedby="wallet"
-                            id="waller"
-                            value="wwerweh23or32hr328ohr3oh320832h"
-                            disabled
-                          />
-                          <div class="input-group-append">
-                            <button class="btn btn-primary" type="button">
-                              <i class="fas fa-copy"></i>
-                              Copy Wallet
-                            </button>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="card-footer pt-3">
-                  <h3>Deposit History</h3>
+                  <h3>Transaction History</h3>
                   <div class="table-responsive">
                     <table class="table table-borderless">
                       <thead>
                         <tr>
+                          <th>Type</th>
                           <th>Date</th>
-                          <th>Coin</th>
                           <th>Amount</th>
                           <th>Status</th>
-                          <th>Adress</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <td>
                             <div class="content">
-                              <span>22/03/2021</span>
+                              <span class="green">Deposit</span>
                             </div>
                           </td>
                           <td>
-                            <div>
-                              <img src="dist/images/btc.png" alt="btc" />
-                              <span>Bitcoin</span>
+                            <div class="content">
+                              <span>22/03/2021</span>
                             </div>
                           </td>
                           <td>
@@ -176,13 +206,6 @@
                           <td>
                             <div class="content">
                               <span>Completed</span>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="content">
-                              <span
-                                >wWasjdhw7657wd57ew65we86d2dg82f32f32f23daaf82</span
-                              >
                             </div>
                           </td>
                         </tr>
@@ -190,13 +213,12 @@
                         <tr>
                           <td>
                             <div class="content">
-                              <span>22/03/2021</span>
+                              <span class="red">Withdraw</span>
                             </div>
                           </td>
                           <td>
-                            <div>
-                              <img src="dist/images/btc.png" alt="btc" />
-                              <span>Bitcoin</span>
+                            <div class="content">
+                              <span>22/03/2021</span>
                             </div>
                           </td>
                           <td>
@@ -204,16 +226,9 @@
                               <span>0.0002</span>
                             </div>
                           </td>
-                          <td>
+                          <td class="withdraw">
                             <div class="content">
                               <span>Completed</span>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="content">
-                              <span
-                                >wWasjdhw7657wd57ew65we86d2dg82f32f32f23daaf82</span
-                              >
                             </div>
                           </td>
                         </tr>
@@ -229,19 +244,10 @@
       </div>
     </main>
     <script src="dist/vendors/jquery/jquery-3.3.1.min.js"></script>
-    <script src="dist/vendors/qrcode-js/qrcode.min.js"></script>
     <script src="dist/vendors/jquery-ui/jquery-ui.min.js"></script>
     <script src="dist/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="dist/vendors/flag-select/js/jquery.flagstrap.min.js"></script>
     <script src="dist/js/app.js"></script>
 
-
-    <script type="text/javascript">
-      new QRCode(document.getElementById("qrcode"), {
-        text: "http://localhost/index.html",
-        width: 128,
-        height: 128,
-      });
-    </script>
   </body>
 </html>

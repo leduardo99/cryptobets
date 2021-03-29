@@ -15,18 +15,13 @@
       rel="stylesheet"
       href="dist/vendors/jquery-ui/jquery-ui.theme.min.css"
     />
-    <link rel="stylesheet" href="dist/vendors/chartjs/Chart.min.css" />
-    <link rel="stylesheet" href="dist/vendors/starrr/starrr.css" />
-    <link
-      href="dist/vendors/bootstrap-tour/css/bootstrap-tour-standalone.min.css"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="dist/vendors/flag-select/css/flags.css" />
 
     <link rel="stylesheet" href="dist/css/main.css" />
     <link rel="stylesheet" href="dist/css/refferal.css" />
@@ -111,7 +106,7 @@
 
               <div class="card-content">
                 <div class="card-body d-flex justify-content-between">
-                  <div class="w-100 d-flex flex-column">
+                  <div class="w-100 d-flex flex-column p-3">
                     <h3 class="text-white mb-3">
                       You Have <strong> 5 Invites </strong>
                     </h3>
@@ -134,7 +129,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="d-flex justify-content-start w-100">
+                  <div
+                    class="d-flex justify-content-start w-100"
+                    id="details-container"
+                  >
                     <div
                       id="details"
                       class="d-flex flex-column align-items-start justify-content-center p-3"
@@ -261,5 +259,8 @@
     <script src="dist/vendors/jquery/jquery-3.3.1.min.js"></script>
     <script src="dist/vendors/jquery-ui/jquery-ui.min.js"></script>
     <script src="dist/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/vendors/flag-select/js/jquery.flagstrap.min.js"></script>
+    <script src="dist/js/app.js"></script>
+
   </body>
 </html>

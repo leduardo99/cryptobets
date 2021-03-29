@@ -15,35 +15,14 @@
       rel="stylesheet"
       href="dist/vendors/jquery-ui/jquery-ui.theme.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="dist/vendors/simple-line-icons/css/simple-line-icons.css"
-    />
-    <link
-      rel="stylesheet"
-      href="dist/vendors/flags-icon/css/flag-icon.min.css"
-    />
     <link rel="stylesheet" href="dist/vendors/flag-select/css/flags.css" />
 
-    <link rel="stylesheet" href="dist/vendors/morris/morris.css" />
-    <link
-      rel="stylesheet"
-      href="dist/vendors/weather-icons/css/pe-icon-set-weather.min.css"
-    />
-    <link rel="stylesheet" href="dist/vendors/chartjs/Chart.min.css" />
-    <link rel="stylesheet" href="dist/vendors/starrr/starrr.css" />
-    <link
-      href="dist/vendors/bootstrap-tour/css/bootstrap-tour-standalone.min.css"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="dist/vendors/ionicons/css/ionicons.min.css" />
-    <link rel="stylesheet" href="dist/vendors/cryptofont/cryptofont.css" />
 
     <link rel="stylesheet" href="dist/css/main.css" />
     <link rel="stylesheet" href="dist/css/index.css" />
@@ -124,7 +103,7 @@
             <div class="card">
               <div class="card-body custom d-flex align-items-center">
                 <div class="d-none d-lg-block card-image">
-                  <img src="dist/images/balance.png" alt="deposit">
+                  <img src="dist/images/balance.png" alt="deposit" />
                 </div>
                 <div class="p-2">
                   <span class="card-title h3 font-weight-bold mt-3"
@@ -132,6 +111,7 @@
                   ><br />
                   <span class="font-weight-bold h4"> $26,476 </span>
                 </div>
+                <a href="index.html" class="btn btn-primary"></a>
               </div>
             </div>
           </div>
@@ -140,7 +120,7 @@
             <div class="card">
               <div class="card-body custom d-flex align-items-center">
                 <div class="d-none d-lg-block card-image">
-                  <img src="dist/images/deposit.png" alt="deposit">
+                  <img src="dist/images/deposit.png" alt="deposit" />
                 </div>
                 <div class="p-2">
                   <span class="card-title h3 font-weight-bold mt-3"
@@ -148,11 +128,16 @@
                   ><br />
                   <div class="d-flex align-items-end">
                     <div id="qrcode"></div>
-                    <button type="button" class="btn btn-primary" id="button-qrcode">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      id="button-qrcode"
+                    >
                       <i class="far fa-copy"></i>
                     </button>
                   </div>
                 </div>
+                <a href="deposit.html" class="btn btn-primary"></a>
               </div>
             </div>
           </div>
@@ -160,8 +145,8 @@
           <div class="col-12 col-sm-6 col-xl mt-3">
             <div class="card">
               <div class="card-body custom d-flex align-items-center">
-                 <div class="d-none d-lg-block card-image">
-                  <img src="dist/images/reffereal.png" alt="deposit">
+                <div class="d-none d-lg-block card-image">
+                  <img src="dist/images/reffereal.png" alt="deposit" />
                 </div>
                 <div class="p-2">
                   <span class="card-title h3 font-weight-bold mt-3"
@@ -171,6 +156,7 @@
                   <br />
                   <span class="font-weight-bold">Total: $80</span>
                 </div>
+                <a href="refferal.html" class="btn btn-primary"></a>
               </div>
             </div>
           </div>
@@ -178,14 +164,15 @@
           <div class="col-12 col-sm-6 col-xl mt-3">
             <div class="card">
               <div class="card-body custom d-flex align-items-center">
-                 <div class="d-none d-lg-block card-image">
-                  <img src="dist/images/profit.png" alt="deposit">
+                <div class="d-none d-lg-block card-image">
+                  <img src="dist/images/profit.png" alt="deposit" />
                 </div>
                 <div class="p-2">
                   <span class="card-title h3 font-weight-bold mt-3">Profit</span
                   ><br />
                   <span class="font-weight-bold h4">$500</span>
                 </div>
+                <a href="profit.html" class="btn btn-primary"></a>
               </div>
             </div>
           </div>
@@ -307,7 +294,7 @@
                               <h3 class="d-flex align-items-center">$125.22</h3>
                             </div>
                           </div>
-                          <div id="ethereum_statistics"></div>
+                          <div id="bitcoin_statistics-2"></div>
                         </div>
                         <div
                           class="tab-pane fade"
@@ -335,7 +322,7 @@
                               <h3 class="d-flex align-items-center">$41.72</h3>
                             </div>
                           </div>
-                          <div id="litecoin_statistics"></div>
+                          <div id="bitcoin_statistics-3"></div>
                         </div>
                       </div>
                     </div>
@@ -347,7 +334,7 @@
           <!-- END: Statistics-->
 
           <!-- START: Statistics-->
-          <div class="col-12 mt-5">
+          <div class="col-12 mt-5 mb-3">
             <div class="card">
               <div class="card-header">
                 <h4 class="card-title">Operations</h4>
@@ -461,11 +448,10 @@
     <script src="dist/vendors/jquery/jquery-3.3.1.min.js"></script>
     <script src="dist/vendors/qrcode-js/qrcode.min.js"></script>
     <script src="dist/vendors/jquery-ui/jquery-ui.min.js"></script>
-    <script src="dist/vendors/moment/moment.js"></script>
     <script src="dist/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="dist/vendors/slimscroll/jquery.slimscroll.min.js"></script>
     <script src="dist/vendors/flag-select/js/jquery.flagstrap.min.js"></script>
     <script src="dist/js/index.js"></script>
+    <script src="dist/js/app.js"></script>
 
     <script type="text/javascript">
       new QRCode(document.getElementById("qrcode"), {

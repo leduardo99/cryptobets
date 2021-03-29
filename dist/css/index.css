@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 #header-fix {
   left: 0 !important;
 }
@@ -168,7 +172,29 @@ tbody td:first-child:before {
   min-height: 207px;
 }
 
-.card-body.custom::before {
+.card-body.custom > a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 40px;
+  background-color: var(--primarycolor);
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.card-body.custom > a::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f061";
+  color: white;
+}
+
+/* .card-body.custom::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f061";
@@ -188,7 +214,7 @@ tbody td:first-child:before {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
+} */
 
 #qrcode {
   max-height: 30%;
