@@ -210,6 +210,6 @@ tbody td:first-child:before {
   min-height: 40px;
 }
 
-#link-to-page {
+#link-to-page:not(:last-child) {
   z-index: 10;
 }
