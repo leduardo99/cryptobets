@@ -136,6 +136,31 @@ tbody td:first-child:before {
   background: #34b44e;
 }
 
+@media (max-width: 992px) {
+  .card-image {
+    width: 100% !important;
+    height: auto !important;
+
+    top: unset !important;
+    bottom: unset !important;
+    left: unset !important;
+  }
+
+  .card-image img {
+    position: inherit !important;
+    top: unset !important;
+    left: unset !important;
+    bottom: unset !important;
+
+    width: 80% !important;
+    height: auto !important;
+  }
+
+  .card {
+    height: 100%;
+  }
+}
+
 .card-image {
   position: relative;
   width: 120px;
@@ -144,14 +169,6 @@ tbody td:first-child:before {
   top: auto;
   bottom: auto;
   left: -50px;
-}
-
-.card-image img {
-  position: absolute;
-  top: -30px;
-  bottom: auto;
-
-  right: 0;
 }
 
 .card-image img {
