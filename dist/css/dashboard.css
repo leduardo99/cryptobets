@@ -209,3 +209,7 @@ tbody td:first-child:before {
 .graphic {
   min-height: 40px;
 }
+
+#link-to-page {
+  z-index: 10;
+}
