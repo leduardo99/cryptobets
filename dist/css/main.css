@@ -4046,3 +4046,11 @@ path.domain {
         left: 5px;
     }
 }
+
+@media (max-width: 500px) {
+  #header-fix #options button {
+    width: auto;
+    line-height: inherit;
+    font-size: inherit;
+  }
+}

@@ -120,19 +120,18 @@
                         consectetuer ipsum dolor sit
                       </p>
 
-                      <div>
+                      <div class="w-100">
                         <label for="wallet">Wallet for Payment</label>
                         <div class="input-group">
                           <input
                             type="text"
                             class="form-control"
-                            aria-describedby="wallet"
-                            id="waller"
+                            id="wallet"
                             value="wwerweh23or32hr328ohr3oh320832h"
-                            disabled
+                            readonly
                           />
                           <div class="input-group-append">
-                            <button class="btn btn-primary" type="button">
+                            <button class="btn btn-primary" onclick="copyToClipboard()">
                               <i class="fas fa-copy"></i>
                               Copy Wallet
                             </button>
@@ -234,6 +233,7 @@
     <script src="dist/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="dist/vendors/flag-select/js/jquery.flagstrap.min.js"></script>
     <script src="dist/js/app.js"></script>
+    <script src="dist/js/deposit.js"></script>
 
 
     <script type="text/javascript">
